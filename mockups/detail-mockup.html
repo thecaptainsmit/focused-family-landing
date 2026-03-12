@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Chart Close-Up - Product Mockup</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 1000px;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .chart {
+            width: 600px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+            padding: 40px;
+            transform: perspective(1000px) rotateY(-3deg) rotateX(2deg);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #f6e05e;
+        }
+        
+        .header h1 {
+            color: #1a365d;
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .tasks {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .task {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .task:hover {
+            border-color: #f6e05e;
+            transform: translateX(5px);
+        }
+        
+        .task.completed {
+            background: #f0fff4;
+            border-color: #48bb78;
+        }
+        
+        .number {
+            width: 40px;
+            height: 40px;
+            background: #1a365d;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .title {
+            font-weight: 700;
+            color: #1a365d;
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+        
+        .detail {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .check {
+            width: 36px;
+            height: 36px;
+            border: 4px solid #1a365d;
+            border-radius: 8px;
+            margin-left: 20px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .check.done {
+            background: #48bb78;
+            border-color: #48bb78;
+            color: #fff;
+        }
+        
+        .task:nth-child(1) .check::after { content: '✓'; color: #fff; background: #48bb78; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 4px; }
+        .task:nth-child(2) .check::after { content: '✓'; color: #fff; background: #48bb78; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 4px; }
+        .task:nth-child(3) .check::after { content: '✓'; color: #fff; background: #48bb78; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 4px; }
+        
+        .highlight {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+            height: 700px;
+            border: 4px dashed rgba(255,255,255,0.3);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        
+        .annotation {
+            position: absolute;
+            background: #f6e05e;
+            color: #1a365d;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .annotation::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+        
+        .ann-1 {
+            top: 200px;
+            right: 50px;
+        }
+        
+        .ann-1::after {
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #f6e05e transparent transparent;
+        }
+        
+        .ann-2 {
+            bottom: 250px;
+            left: 50px;
+        }
+        
+        .ann-2::after {
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #f6e05e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="highlight"></div>
+        
+        <div class="annotation ann-1">Chunked tasks for ADHD brains</div>
+        <div class="annotation ann-2">Visual checkboxes = dopamine hit</div>
+        
+        <div class="chart">
+            <div class="header">
+                <h1>Morning Routine</h1>
+                <p>6 steps to a calm morning</p>
+            </div>
+            
+            <div class="tasks">
+                <div class="task completed">
+                    <div class="number">1</div>
+                    <div class="content">
+                        <div class="title">Wake Up</div>
+                        <div class="detail">Open curtains, stretch</div>
+                    </div>
+                    <div class="check"></div>
+                </div>
+                
+                <div class="task completed">
+                    <div class="number">2</div>
+                    <div class="content">
+                        <div class="title">Bathroom</div>
+                        <div class="detail">Potty, wash hands, brush teeth</div>
+                    </div>
+                    <div class="check"></div>
+                </div>
+                
+                <div class="task completed">
+                    <div class="number">3</div>
+                    <div class="content">
+                        <div class="title">Get Dressed</div>
+                        <div class="detail">Pick from 2 outfits</div>
+                    </div>
+                    <div class="check"></div>
+                </div>
+                
+                <div class="task">
+                    <div class="number">4</div>
+                    <div class="content">
+                        <div class="title">Eat Breakfast</div>
+                        <div class="detail">Protein first</div>
+                    </div>
+                    <div class="check"></div>
+                </div>
+                
+                <div class="task">
+                    <div class="number">5</div>
+                    <div class="content">
+                        <div class="title">Pack Bag</div>
+                        <div class="detail">Lunch, water, homework</div>
+                    </div>
+                    <div class="check"></div>
+                </div>
+                
+                <div class="task">
+                    <div class="number">6</div>
+                    <div class="content">
+                        <div class="title">Shoes On</div>
+                        <div class="detail">Ready to go!</div>
+                    </div>
+                    <div class="check"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
