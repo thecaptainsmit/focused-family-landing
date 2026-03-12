@@ -1,0 +1,42 @@
+<!-- Email Capture Form - Embedded in Blog Posts -->
+<div class="email-capture" style="background:#1a365d;color:white;padding:40px;border-radius:12px;margin:50px 0;text-align:center;">
+    <h3 style="color:#f6e05e;margin-top:0;font-size:1.5rem;">🎁 Free ADHD Parent Toolkit</h3>
+    
+    <p style="font-size:1.1rem;margin-bottom:25px;">Join 500+ parents getting science-backed strategies for calmer mornings:</p>
+    
+    <ul style="text-align:left;max-width:450px;margin:0 auto 25px;list-style:none;padding:0;">
+        <li style="margin-bottom:10px;padding-left:25px;position:relative;">
+            <span style="position:absolute;left:0;">✓</span>
+            Morning routine chart (printable)
+        </li>
+        <li style="margin-bottom:10px;padding-left:25px;position:relative;">
+            <span style="position:absolute;left:0;">✓</span>
+            First-Then transition cards
+        </li>
+        <li style="margin-bottom:10px;padding-left:25px;position:relative;">
+            <span style="position:absolute;left:0;">✓</span>
+            Weekly evidence-based tips
+        </li>
+    </ul>
+
+    <form action="https://api.convertkit.com/forms/YOUR_FORM_ID/subscriptions" method="POST" style="max-width:400px;margin:0 auto;">
+        <input type="email" name="email_address" placeholder="Enter your email" required 
+               style="width:100%;padding:15px;border:none;border-radius:6px;margin-bottom:15px;font-size:1rem;">
+        
+        <button type="submit" 
+                style="width:100%;background:#f6e05e;color:#1a365d;padding:15px;border:none;border-radius:6px;font-size:1.1rem;font-weight:600;cursor:pointer;">
+            Get Free Toolkit →
+        </button>
+    </form>
+    
+    <p style="font-size:0.85rem;color:#a0aec0;margin-top:15px;">No spam. Unsubscribe anytime.</p>
+</div>
+
+<style>
+.email-capture input::placeholder { color: #999; }
+.email-capture button:hover { transform: translateY(-2px); transition: transform 0.2s; }
+@media (max-width: 600px) {
+    .email-capture { padding: 30px 20px; }
+    .email-capture h3 { font-size: 1.3rem; }
+}
+</style>
