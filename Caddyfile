@@ -1,5 +1,4 @@
-:80 {
-	bind tailscale/100.103.171.47
+:8080 {
 	root * /root/.openclaw/workspace/landing
 	file_server
 }
