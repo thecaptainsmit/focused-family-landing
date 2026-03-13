@@ -1,230 +1,412 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>End Morning Battles: ADHD Morning Routine System</title>
-    <meta name="description" content="Science-based morning routine system for ADHD kids. Get out the door calmly in 20 minutes. $9 one-time purchase.">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; background: #faf7f2; }
-        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
-        
-        /* Hero */
-        .hero { text-align: center; padding: 80px 20px; background: #1a365d; color: white; }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; line-height: 1.2; }
-        .hero p { font-size: 1.25rem; margin-bottom: 30px; opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto; }
-        .cta { display: inline-block; padding: 18px 40px; background: #f6e05e; color: #1a365d; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1rem; transition: transform 0.2s; }
-        .cta:hover { transform: translateY(-2px); }
-        .social-proof { margin-top: 20px; font-size: 0.9rem; opacity: 0.9; }
-        
-        /* Sections */
-        .section { padding: 60px 20px; }
-        .section-alt { background: white; }
-        .section h2 { text-align: center; margin-bottom: 40px; color: #1a365d; font-size: 1.75rem; }
-        
-        /* Problem */
-        .problem-box { background: #fff3cd; border-left: 4px solid #f6ad55; padding: 25px; margin: 20px 0; border-radius: 0 8px 8px 0; }
-        
-        /* Benefits */
-        .benefits { max-width: 600px; margin: 0 auto; }
-        .benefits li { list-style: none; padding-left: 35px; position: relative; margin-bottom: 15px; font-size: 1.1rem; }
-        .benefits li::before { content: "✓"; position: absolute; left: 0; color: #48bb78; font-weight: bold; font-size: 1.2rem; }
-        
-        /* Features */
-        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; max-width: 800px; margin: 0 auto; }
-        .feature-card { background: #f7fafc; padding: 30px 20px; border-radius: 12px; text-align: center; border: 2px solid #e2e8f0; }
-        .feature-card h3 { color: #1a365d; margin-bottom: 10px; font-size: 1.1rem; }
-        .feature-card p { font-size: 0.95rem; color: #666; }
-        
-        /* Testimonials */
-        .testimonial-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 25px; }
-        .testimonial-card p { font-style: italic; margin-bottom: 15px; font-size: 1.05rem; }
-        .testimonial-card cite { font-style: normal; font-weight: 600; color: #1a365d; }
-        .stars { color: #f6e05e; margin-bottom: 10px; font-size: 1.2rem; }
-        
-        /* Email Capture */
-        .email-section { background: #1a365d; color: white; padding: 50px 20px; text-align: center; }
-        .email-section h2 { color: white; margin-bottom: 20px; }
-        .email-section p { margin-bottom: 25px; opacity: 0.9; }
-        .email-form { max-width: 400px; margin: 0 auto; display: flex; gap: 10px; }
-        .email-form input { flex: 1; padding: 15px; border: none; border-radius: 6px; font-size: 1rem; }
-        .email-form button { padding: 15px 25px; background: #f6e05e; color: #1a365d; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; }
-        
-        /* Pricing */
-        .price { font-size: 3rem; font-weight: 700; color: #1a365d; text-align: center; margin: 20px 0; }
-        .guarantee { background: #f0fff4; border: 2px solid #48bb78; padding: 25px; border-radius: 12px; text-align: center; margin: 30px 0; }
-        .guarantee h3 { color: #1a365d; margin-bottom: 10px; }
-        
-        /* FAQ */
-        .faq-item { margin-bottom: 25px; }
-        .faq-item h4 { color: #1a365d; margin-bottom: 8px; font-size: 1.1rem; }
-        
-        /* Mobile */
-        @media (max-width: 600px) { 
-            .hero h1 { font-size: 1.8rem; } 
-            .hero p { font-size: 1.1rem; }
-            .email-form { flex-direction: column; }
-        }
-    </style>
-</head>
-<body>
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <h1>End Morning Battles with Your ADHD Child</h1>
-            <p>The science-based morning routine system that helps kids get ready calmly in 20 minutes — without yelling, bribing, or carrying them to the car in pajamas</p>
-            <a href="#buy" class="cta">Get the System ($9) →</a>
-            <p class="social-proof">⭐ Beta launch: Be the first to try this system</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop narrating every step of the morning | ADHD Morning Routine Rescue Kit</title>
+    <meta name="description" content="A printable visual routine kit that helps your child see what to do next, move through transitions with less friction, and rely less on you repeating the whole routine out loud." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-variant="default">
+    
+  <section class="hero">
+    <div class="container hero__layout">
+      <div class="hero__copy">
+        <p class="announcement">Printable morning routine tools for parents of kids with ADHD</p>
+        <p class="eyebrow">ADHD Morning Routine Rescue Kit</p>
+        <h1>Stop narrating every step of the morning</h1>
+        <p class="lede">A printable visual routine kit that helps your child see what to do next, move through transitions with less friction, and rely less on you repeating the whole routine out loud.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="https://gumroad.com/">Get the routine kit</a>
+          <a class="button button--secondary" href="#lead-magnet">Grab the free transition board</a>
         </div>
-    </section>
-
-    <!-- Problem -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2>Does This Sound Familiar?</h2>
-            <div class="problem-box">
-                <p><strong>7:30 AM.</strong> You need to leave in 20 minutes.</p>
-                <p>Your child is still in pajamas, hasn't brushed teeth, and is melting down because they can't find their shoes.</p>
-                <p>You're yelling. They're crying. Everyone's stressed.</p>
-                <p><strong>This isn't your fault.</strong> Most "routine charts" are designed for neurotypical kids. They don't work for ADHD brains.</p>
+        <p class="support-line">Print tonight. Use tomorrow morning.</p>
+        <ul class="inline-points"><li>Built for ADHD and executive-function struggles</li><li>Low-prep printable system</li><li>Designed to reduce verbal overload</li></ul>
+      </div>
+      <aside class="hero-panel">
+        <div class="hero-panel__top">
+          <p class="hero-panel__kicker">What the parent gets</p>
+          <h2>A ready-to-print morning system</h2>
+          <p>Clear boards, transition tools, and parent guidance that help you run the same morning with less chasing, less repeating, and less last-minute chaos.</p>
+        </div>
+        <div class="hero-panel__mockup">
+          <div class="mockup-window">
+            <div class="mockup-window__bar">
+              <span></span><span></span><span></span>
             </div>
-        </div>
-    </section>
-
-    <!-- Benefits -->
-    <section class="section">
-        <div class="container">
-            <h2>What You'll Achieve</h2>
-            <ul class="benefits">
-                <li>Out the door in 20 minutes — consistently</li>
-                <li>No more morning yelling or power struggles</li>
-                <li>Kids cooperate willingly (even ask to check off boxes)</li>
-                <li>Designed specifically for how ADHD brains work</li>
-                <li>Laminate once, use every day for years</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2>What's Included</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>📋 A4 Wall Chart</h3>
-                    <p>6 chunked tasks designed for ADHD brains. Visual, clear, no clutter.</p>
+            <div class="mockup-window__body">
+              <div class="mockup-column">
+                <p class="mini-label">Morning board</p>
+                <div class="mockup-chip-list">
+                  <span>Get dressed</span>
+                  <span>Brush teeth</span>
+                  <span>Breakfast</span>
+                  <span>Shoes</span>
+                  <span>Backpack</span>
                 </div>
-                <div class="feature-card">
-                    <h3>⭐ Streak Tracker</h3>
-                    <p>Build momentum with visual progress. Kids love seeing their wins.</p>
+              </div>
+              <div class="mockup-column mockup-column--accent">
+                <p class="mini-label">Transition card</p>
+                <div class="mockup-transition">
+                  <strong>First shoes</strong>
+                  <small>Then backpack</small>
                 </div>
-                <div class="feature-card">
-                    <h3>📖 Parent Guide</h3>
-                    <p>Exact scripts for what to say. Troubleshooting for common battles.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🎁 Reward System</h3>
-                    <p>Built-in dopamine rewards. No sticker charts to buy.</p>
-                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="check-list"><li>Visual routine board for the full morning</li><li>Minimal version for lower visual load</li><li>First-Then and choice supports for sticky moments</li><li>Exit-door checklist and parent prompting guide</li></ul>
+        <div class="hero-stats">
+          
+            <div class="hero-stat">
+              <strong>8</strong>
+              <span>core printable tools</span>
+            </div>
+            <div class="hero-stat">
+              <strong>1</strong>
+              <span>quick-start path</span>
+            </div>
+            <div class="hero-stat">
+              <strong>0</strong>
+              <span>complicated setup steps</span>
             </div>
         </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section">
-        <div class="container">
-            <h2>What Parents Are Saying</h2>
-            
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"We were spending 45 minutes on mornings. Constant yelling. After using this system, we're out the door in 20 minutes and my son actually asks to check off his boxes."</p>
-                <cite>— Sarah M., beta tester</cite>
+        <div class="hero-panel__freebie">
+          <span class="badge">Free quick win</span>
+          <p><strong>Free First-Then Transition Board</strong> A one-page printable for the exact moment your child stalls between one step and the next.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container story-grid">
+      <div>
+        <p class="section-tag">Why mornings spiral</p>
+        <h2>The morning gets heavy when you have to hold every step in your head</h2>
+        <p>You are not just getting your child ready. You are remembering the sequence, catching the delays, restarting the stalled moments, and trying not to snap before school even begins.</p><p>That is why generic advice rarely helps. The real problem is not motivation. The real problem is that the routine disappears unless you keep re-creating it out loud.</p>
+      </div>
+      <div class="loop-card">
+        <p class="loop-card__label">What the morning sounds like</p>
+        <ul class="loop-list"><li>Get dressed</li><li>No, socks first</li><li>Brush teeth</li><li>Backpack</li><li>Shoes</li><li>Where did the water bottle go?</li></ul>
+      </div>
+    </div>
+  </section>
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section-heading section-heading--wide">
+        <p class="section-tag">What gets easier</p>
+        <h2>What changes when the routine becomes visible</h2>
+        <p>The goal is not a perfect morning. The goal is a morning that does not collapse the second you stop prompting.</p>
+      </div>
+      <div class="outcomes-grid">
+        
+          <article class="outcome-card">
+            <span class="outcome-card__icon">+</span>
+            <p>Your child can see the next step without waiting for a reminder</p>
+          </article>
+          <article class="outcome-card">
+            <span class="outcome-card__icon">+</span>
+            <p>Transitions feel clearer, shorter, and less emotionally charged</p>
+          </article>
+          <article class="outcome-card">
+            <span class="outcome-card__icon">+</span>
+            <p>You stop repeating the same directions on loop</p>
+          </article>
+          <article class="outcome-card">
+            <span class="outcome-card__icon">+</span>
+            <p>Independence has something concrete to attach to</p>
+          </article>
+          <article class="outcome-card">
+            <span class="outcome-card__icon">+</span>
+            <p>The routine feels easier to restart after derailments</p>
+          </article>
+          <article class="outcome-card">
+            <span class="outcome-card__icon">+</span>
+            <p>You get a calmer handoff at the door</p>
+          </article>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container mechanism">
+      <div class="section-heading section-heading--wide">
+        <p class="section-tag">Why this is different</p>
+        <h2>Why this works better than a normal chart</h2>
+        <p>Most charts fail because they are too generic, too busy, or too disconnected from the moments that actually break the morning.</p>
+      </div>
+      <div class="mechanism__compare">
+        
+          <article class="compare-card">
+            <p class="compare-card__label">Normal chart</p>
+            <ul class="compare-list"><li>Lists tasks but does not support transitions</li><li>Assumes your child will look at it and self-start</li><li>Gives you no script for introducing it</li><li>Often becomes wall decor by day three</li></ul>
+          </article>
+          <article class="compare-card compare-card--accent">
+            <p class="compare-card__label">This kit</p>
+            <ul class="compare-list"><li>Targets the exact stall points that create morning gridlock</li><li>Includes low-visual-load options for overwhelmed kids</li><li>Gives parents a simple way to roll it out without overhauling everything</li><li>Built to start with one page, not a full system</li></ul>
+          </article>
+      </div>
+      <div class="principles">
+        
+          <article class="principle-card">
+            <p>Visible next steps instead of verbal memory</p>
+          </article>
+          <article class="principle-card">
+            <p>Transition supports, not just task lists</p>
+          </article>
+          <article class="principle-card">
+            <p>Lower setup burden so parents actually use it</p>
+          </article>
+      </div>
+    </div>
+  </section>
+  <section class="section section--warm">
+    <div class="container">
+      <div class="section-heading section-heading--wide">
+        <p class="section-tag">What you get</p>
+        <h2>What you get inside the kit</h2>
+        <p>Everything is designed to feel tangible, printable, and immediately useful, not like a vague digital download.</p>
+      </div>
+      <div class="kit-layout">
+        <div class="kit-list">
+          
+            <article class="kit-item">
+              <span class="kit-item__number">01</span>
+              <div>
+                <h3>Morning Routine Board</h3>
+                <p>A full-sequence visual board for the standard school-morning flow.</p>
+              </div>
+            </article>
+            <article class="kit-item">
+              <span class="kit-item__number">02</span>
+              <div>
+                <h3>Minimal Routine Board</h3>
+                <p>A quieter version for kids who shut down around too much visual input.</p>
+              </div>
+            </article>
+            <article class="kit-item">
+              <span class="kit-item__number">03</span>
+              <div>
+                <h3>First-Then Cards</h3>
+                <p>Simple transition supports for moments like dressed to bathroom or shoes to door.</p>
+              </div>
+            </article>
+            <article class="kit-item">
+              <span class="kit-item__number">04</span>
+              <div>
+                <h3>Choice Board</h3>
+                <p>Useful when resistance spikes and offering controlled choices works better than repeating prompts.</p>
+              </div>
+            </article>
+            <article class="kit-item">
+              <span class="kit-item__number">05</span>
+              <div>
+                <h3>Exit-Door Checklist</h3>
+                <p>A last-pass visual check for backpack, lunch, shoes, and essentials.</p>
+              </div>
+            </article>
+            <article class="kit-item">
+              <span class="kit-item__number">06</span>
+              <div>
+                <h3>Reward Tracker</h3>
+                <p>A lightweight reinforcement tool for families who want it.</p>
+              </div>
+            </article>
+            <article class="kit-item">
+              <span class="kit-item__number">07</span>
+              <div>
+                <h3>Quick-Start Guide</h3>
+                <p>A short setup path so you know exactly where to begin tonight.</p>
+              </div>
+            </article>
+            <article class="kit-item">
+              <span class="kit-item__number">08</span>
+              <div>
+                <h3>Parent Prompting Guide</h3>
+                <p>Shows how to use the tools with less back-and-forth and less overload.</p>
+              </div>
+            </article>
+        </div>
+        <div class="preview-stack">
+          
+    <article class="preview-card">
+      <p class="preview-card__title">Routine Board Preview</p>
+      <div class="board-sheet">
+        
+          <div class="board-sheet__step">
+            <span>1</span>
+            <strong>Get dressed</strong>
+          </div>
+          <div class="board-sheet__step">
+            <span>2</span>
+            <strong>Brush teeth</strong>
+          </div>
+          <div class="board-sheet__step">
+            <span>3</span>
+            <strong>Breakfast</strong>
+          </div>
+          <div class="board-sheet__step">
+            <span>4</span>
+            <strong>Shoes</strong>
+          </div>
+          <div class="board-sheet__step">
+            <span>5</span>
+            <strong>Backpack</strong>
+          </div>
+          <div class="board-sheet__step">
+            <span>6</span>
+            <strong>Door</strong>
+          </div>
+      </div>
+    </article>
+      <article class="preview-card preview-card--transition">
+        <p class="preview-card__title">First-Then Card</p>
+        <div class="transition-card">
+          <div class="transition-card__block">
+            <span>First</span>
+            <strong>Shoes</strong>
+          </div>
+          <div class="transition-card__arrow">→</div>
+          <div class="transition-card__block transition-card__block--accent">
+            <span>Then</span>
+            <strong>Then backpack</strong>
+          </div>
+        </div>
+      </article>
+      <article class="preview-card">
+        <p class="preview-card__title">Exit-Door Check</p>
+        <div class="check-sheet">
+          
+            <div class="check-sheet__row">
+              <span class="check-sheet__box"></span>
+              <span>Lunch</span>
             </div>
-            
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"I've tried 5 different routine charts from Amazon. This is the first one designed specifically for ADHD brains. The 'first-then' approach actually works."</p>
-                <cite>— Michael T., beta tester</cite>
+            <div class="check-sheet__row">
+              <span class="check-sheet__box"></span>
+              <span>Water</span>
             </div>
-            
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"The parent guide taught me I was making the 'too many steps' mistake. Once we chunked it down and used the scripts, mornings became peaceful."</p>
-                <cite>— Jennifer R., beta tester</cite>
+            <div class="check-sheet__row">
+              <span class="check-sheet__box"></span>
+              <span>Folder</span>
+            </div>
+            <div class="check-sheet__row">
+              <span class="check-sheet__box"></span>
+              <span>Shoes</span>
             </div>
         </div>
-    </section>
-
-    <!-- Email Capture -->
-    <section class="email-section">
-        <div class="container">
-            <h2>Not Ready to Buy?</h2>
-            <p>Get our free "5-Day ADHD Morning Makeover" email course. One tip per day that actually works.</p>
-            <form class="email-form" action="#" method="POST">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Send Me Free Tips</button>
-            </form>
-            <p style="font-size: 0.85rem; margin-top: 15px; opacity: 0.8;">No spam. Unsubscribe anytime.</p>
+      </article>
         </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="section section-alt" id="buy">
-        <div class="container" style="text-align: center;">
-            <h2>Get the Complete System</h2>
-            <div class="price">$9</div>
-            <p style="margin-bottom: 25px;">One-time purchase. Instant PDF download.</p>
-            <a href="#" class="cta" style="font-size: 1.2rem; padding: 20px 50px;">Buy Now — Start Tomorrow</a>
-            
-            <div class="guarantee">
-                <h3>🛡️ 30-Day Money-Back Guarantee</h3>
-                <p>If this system doesn't reduce your morning battles, I'll refund every penny. No questions asked. Email me directly at bella@focusedfamily.co</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container process">
+      <div>
+        <p class="section-tag">Low-friction rollout</p>
+        <h2>Start smaller than you think</h2>
+        <p>You do not need to print everything, laminate anything, or launch a picture-perfect routine overhaul.</p><p>Pick the one moment that breaks most often, use the matching tool, and let the system earn its place in your morning.</p>
+      </div>
+      <ol class="steps">
+        
+          <li>
+            <span class="steps__index">1</span>
+            <div>
+              <strong>Print one page</strong>
             </div>
+          </li>
+          <li>
+            <span class="steps__index">2</span>
+            <div>
+              <strong>Use it at one hard transition</strong>
+            </div>
+          </li>
+          <li>
+            <span class="steps__index">3</span>
+            <div>
+              <strong>Expand only if it helps</strong>
+            </div>
+          </li>
+      </ol>
+    </div>
+  </section>
+  <section class="section section--accent" id="lead-magnet">
+    <div class="container lead">
+      <div class="lead__copy">
+        <p class="section-tag">Free starter tool</p>
+        <h2>Start with the free tool if you want a fast proof point</h2>
+        <p>The free First-Then board is the smallest useful piece of the system. It helps with the exact stuck moments that usually trigger repetition, negotiation, or last-minute rushing.</p>
+        <ul class="promo-list"><li>One-page printable</li><li>Useful for dressing, bathroom, shoes, and door transitions</li><li>A quick way to test visual support before buying the full kit</li></ul>
+        <a class="button button--light" href="https://gumroad.com/">Get the free First-Then board</a>
+      </div>
+      <div class="lead__card">
+        <span class="badge badge--light">Free printable</span>
+        <h3>Free First-Then Transition Board</h3>
+        <p>A one-page printable for the exact moment your child stalls between one step and the next.</p>
+        <div class="transition-card transition-card--large">
+          <div class="transition-card__block">
+            <span>First</span>
+            <strong>Brush teeth</strong>
+          </div>
+          <div class="transition-card__arrow">→</div>
+          <div class="transition-card__block transition-card__block--accent">
+            <span>Then</span>
+            <strong>Shoes on</strong>
+          </div>
         </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section">
-        <div class="container">
-            <h2>Common Questions</h2>
-            
-            <div class="faq-item">
-                <h4>What age is this for?</h4>
-                <p>Designed for ages 4-10 with ADHD. Can work for older kids with modifications (included in parent guide).</p>
-            </div>
-            
-            <div class="faq-item">
-                <h4>How quickly will I see results?</h4>
-                <p>Most parents see improvement within 1 week. Full routine establishment takes 2-3 weeks of consistency.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h4>Do I need to buy anything else?</h4>
-                <p>Just a printer and optionally a laminator (or use a page protector). Everything else is included.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h4>Is this digital or physical?</h4>
-                <p>Digital PDF download. Print as many copies as you need for your household.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h4>What if it doesn't work for my child?</h4>
-                <p>Full refund within 30 days, no questions. But also: the parent guide includes troubleshooting for 10 common scenarios.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="section" style="background: #1a365d; color: white; text-align: center;">
-        <div class="container">
-            <h2 style="color: white;">Ready for Calmer Mornings?</h2>
-            <p style="margin-bottom: 25px; opacity: 0.9;">Based on behavioral science research · 30-day guarantee</p>
-            <a href="#" class="cta" style="font-size: 1.2rem;">Get the System ($9) →</a>
-            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">30-day money-back guarantee</p>
-        </div>
-    </section>
-
-</body>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Before you buy</p>
+        <h2>Questions parents usually ask before buying</h2>
+      </div>
+      <div class="faq-grid">
+        
+          <article class="faq-card">
+            <h3>My child ignores charts. Why would this be different?</h3>
+            <p>Because this is not just a chart. The kit includes transition tools, lower-visual-load formats, and parent guidance that helps you introduce the system in a way that fits real ADHD mornings.</p>
+          </article>
+          <article class="faq-card">
+            <h3>I do not want another printable I never use.</h3>
+            <p>That is exactly why this is built around one pressure point and one quick-start path. You can begin with a single page instead of committing to a giant organization project.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Will this fix every hard morning?</h3>
+            <p>No honest tool can promise that. What it can do is make the routine clearer, reduce how much you have to verbally manage, and give your child more visible support.</p>
+          </article>
+          <article class="faq-card">
+            <h3>How fast can I actually try it?</h3>
+            <p>Tonight if you want. Print one page, choose one rough transition, and use it tomorrow morning.</p>
+          </article>
+      </div>
+    </div>
+  </section>
+  <section class="section section--quiet">
+    <div class="container narrow">
+      <p class="section-tag">Honest expectations</p>
+      <h2>Practical help, not inflated promises</h2>
+      <p>This is not a cure, a guarantee, or a replacement for professional support.</p><p>It is a concrete morning tool kit for families who need something more useful than more reminders and more stress.</p>
+    </div>
+  </section>
+  <section class="section final-cta">
+    <div class="container final-cta__box">
+      <div>
+        <p class="section-tag">Ready for a calmer start?</p>
+        <h2>Take the pressure off the next school morning</h2>
+        <p>If you are tired of carrying the entire routine in your voice, start with a tool your child can actually see and follow.</p>
+      </div>
+      <div class="final-cta__actions">
+        <a class="button button--primary" href="https://gumroad.com/">Get the ADHD Morning Routine Rescue Kit</a>
+        <a class="button button--ghost" href="https://gumroad.com/">Start with the free board</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Built for real homes. Structured for clearer mornings.</p>
+      <p class="footer__meta">Printable tools. Lower-friction setup. Honest claims.</p>
+    </div>
+  </footer>
+  </body>
 </html>
